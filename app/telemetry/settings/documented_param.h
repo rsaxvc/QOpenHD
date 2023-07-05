@@ -538,7 +538,8 @@ static std::vector<XParam> get_parameters_list(){
                     {"ttyUSB0","/dev/ttyUSB0"},
                     {"ttyACM0","/dev/ttyACM0"},
                     {"ttyACM1","/dev/ttyACM1"},
-                    {"ttyS7","/dev/ttyS7"}
+                    {"ttyS7","/dev/ttyS7"},
+                    {"fifo","/var/run/openhd/ohdFifo"}
             };
             append_string(ret,"FC_UART_CONN",ImprovedStringSetting{fc_uart_conn_values},
                           "Telemetry FC<->Air unit. Make sure FC_UART_BAUD matches your FC. For rpi users, select serial0 for GPIO serial. "
